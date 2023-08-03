@@ -78,6 +78,16 @@
             <artifactId>vaadin-testbench-junit5</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20230618</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.cloud.tools</groupId>
+            <artifactId>appengine-maven-plugin</artifactId>
+            <version>2.4.4</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -104,6 +114,15 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>com.google.cloud.tools</groupId>
+                <artifactId>appengine-maven-plugin</artifactId>
+                <version>2.4.4</version>
+                <configuration>
+                    <projectId>GCLOUD_CONFIG</projectId>
+                    <version>GCLOUD_CONFIG</version>
+                </configuration>
             </plugin>
         </plugins>
     </build>
@@ -139,6 +158,15 @@
                                 <phase>compile</phase>
                             </execution>
                         </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>com.google.cloud.tools</groupId>
+                        <artifactId>appengine-maven-plugin</artifactId>
+                        <version>2.4.4</version>
+                        <configuration>
+                            <projectId>GCLOUD_CONFIG</projectId>
+                            <version>GCLOUD_CONFIG</version>
+                        </configuration>
                     </plugin>
                 </plugins>
             </build>
@@ -184,6 +212,15 @@
                         <configuration>
                             <trimStackTrace>false</trimStackTrace>
                             <enableAssertions>true</enableAssertions>
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <groupId>com.google.cloud.tools</groupId>
+                        <artifactId>appengine-maven-plugin</artifactId>
+                        <version>2.4.4</version>
+                        <configuration>
+                            <projectId>GCLOUD_CONFIG</projectId>
+                            <version>GCLOUD_CONFIG</version>
                         </configuration>
                     </plugin>
                 </plugins>

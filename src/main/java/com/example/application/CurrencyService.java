@@ -1,4 +1,4 @@
-package org.vaadin.example;
+package com.example.application;
 
 import org.json.JSONObject;
 import org.springframework.stereotype.Service;

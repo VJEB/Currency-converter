@@ -1,0 +1,32 @@
+.centered-content {
+  margin: 0 auto;
+  align-items: center;
+}
+.wrappers-container {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.button {
+  cursor: pointer !important;
+}
+.h1 {
+  text-align: center;
+}
+.h2 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+@media screen and (max-width: 500px) {
+    .wrappers-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .h2 {
+      font-size: 1.2rem;
+    }
+}
